@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - GVG Capital LLC</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="header">
+    <a href="index.html" class="logo">
+      <img src="https://lirp.cdn-website.com/2cbae5bf/dms3rep/multi/opt/GVG%2BCapital%2BLogo%2Bfor%2BLinkedIn-320w.jpg" alt="GVG Capital LLC">
+    </a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="technology.html">Technology</a>
+      <a href="team.html">Team</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html" class="active">Contact Us</a>
+      <a href="jobs.html">Jobs</a>
+    </nav>
+  </header>
+
+  <!-- Hero Banner -->
+  <section class="contact-hero">
+    <h1>CONTACT US</h1>
+    <p>Want to reach us? Leave your contact details and we'll get back to you.</p>
+  </section>
+
+  <!-- Contact Body -->
+  <section class="contact-body">
+    <div class="contact-info">
+      <h2>Get In Touch</h2>
+      <div class="info-item">972.954.6321</div>
+      <div class="info-item">info@gvgcapital.org</div>
+      <div class="info-address">
+        4305 Windsor Centre Trail #300<br>
+        Flower Mound, TX 75028
+      </div>
+      <div class="contact-socials">
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.linkedin.com/company/gvg-capital" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+
+    <form class="contact-form" id="contactForm">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone">
+        </div>
+      </div>
+      <div class="form-group" style="margin-bottom: 25px;">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group" style="margin-bottom: 25px;">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+      </div>
+      <button type="submit" class="submit-btn">SUBMIT</button>
+      <p id="formSuccess" style="display:none; color: green; margin-top: 15px;">Thank you for contacting us. We will get back to you as soon as possible.</p>
+    </form>
+  </section>
+
+  <!-- Map -->
+  <div class="contact-map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3347.5!2d-97.078!3d33.035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c2e5a0b0b0b0b%3A0x0!2s4305+Windsor+Centre+Trail%2C+Flower+Mound%2C+TX+75028!5e0!3m2!1sen!2sus!4v1700000000000" allowfullscreen loading="lazy"></iframe>
+  </div>
+
+  <hr class="divider">
+
+  <footer class="footer">
+    <div>
+      GVG Capital, LLC<br>
+      4305 Windsor Centre Trail<br>
+      #300<br>
+      Flower Mound, TX 75028
+    </div>
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/company/gvg-capital" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      <a href="mailto:info@gvgcapital.org" aria-label="Email"><i class="fas fa-envelope"></i></a>
+    </div>
+    <div style="margin-top: 15px; font-size: 12px; color: #999;">
+      <a href="privacy.html" style="color: #999; text-decoration: underline;">Privacy Policy</a>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      document.getElementById('formSuccess').style.display = 'block';
+      this.reset();
+    });
+  </script>
+
+</body>
+</html>
