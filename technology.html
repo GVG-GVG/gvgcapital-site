@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Technology - GVG Capital LLC</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="header">
+    <a href="index.html" class="logo">
+      <img src="https://lirp.cdn-website.com/2cbae5bf/dms3rep/multi/opt/GVG%2BCapital%2BLogo%2Bfor%2BLinkedIn-320w.jpg" alt="GVG Capital LLC">
+    </a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="technology.html" class="active">Technology</a>
+      <a href="team.html">Team</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="jobs.html">Jobs</a>
+    </nav>
+  </header>
+
+  <section class="page-hero">
+    <h1>What we're currently <span class="highlight">nerding</span> out to.</h1>
+    <p>You should probably know, we build <span class="orange">ALL</span> of our tech, <span class="bold-orange">in house</span>....from the ground up.</p>
+  </section>
+
+  <div class="tech-grid">
+
+    <!-- Big Data -->
+    <div class="tech-card">
+      <div class="tech-image">
+        <img src="https://lirp.cdn-website.com/2cbae5bf/dms3rep/multi/opt/big-data-480w.png" alt="Big Data">
+      </div>
+      <div class="tech-content">
+        <h3>Big Data</h3>
+        <p class="tech-summary">It all starts with data. Lots of data... By utilizing first party, consumer provided, data, 3rd party data providers, and industry niche data partners....</p>
+        <div class="tech-detail" id="bigdata-detail">
+          <p>...we analyze over 500 property specific data points on every home in the United States, and over 200 consumer specific data points. Through this, we have compiled a vast data set that allows us to take the guess work out of predictive modeling. Our results are so accurate it even freaks us out sometimes.....more on that later.</p>
+        </div>
+        <button class="expand-btn" onclick="toggleDetail('bigdata-detail', this)">+</button>
+      </div>
+    </div>
+
+    <!-- Artificial Intelligence -->
+    <div class="tech-card">
+      <div class="tech-image">
+        <img src="https://lirp.cdn-website.com/2cbae5bf/dms3rep/multi/opt/artificial-intelligence-480w.png" alt="Artificial Intelligence">
+      </div>
+      <div class="tech-content">
+        <h3>Artificial Intelligence</h3>
+        <p class="tech-summary">Now a days, it's 'cool' to say you use AI, but not all AI is created equal....</p>
+        <div class="tech-detail" id="ai-detail">
+          <p>...We've been playing in the AI sandbox long before it became 'cool'. In fact, many of the industry disruptive AI techniques being awed over today, were implemented in our tech over 3 years ago. Being data nerds has its perks.</p>
+        </div>
+        <button class="expand-btn" onclick="toggleDetail('ai-detail', this)">+</button>
+      </div>
+    </div>
+
+    <!-- Predictive Modeling -->
+    <div class="tech-card">
+      <div class="tech-image">
+        <img src="https://lirp.cdn-website.com/2cbae5bf/dms3rep/multi/opt/predictive-modeling-480w.png" alt="Predictive Modeling">
+      </div>
+      <div class="tech-content">
+        <h3>Predictive Modeling</h3>
+        <p class="tech-summary">We can't give away our 'secret sauce', but we can peel back the curtains just enough to get any data nerd excited....</p>
+        <div class="tech-detail" id="pm-detail">
+          <p>.....In short, we utilize predictive modeling to understand the likelihood of a real estate transaction, but most importantly, what type of real estate transaction is most likely to occur, (off market transaction vs. traditional MLS listing).</p>
+          <p>Data Analysis/Predictive Modeling is simply identifying, and understanding patterns. By looking at past real estate transactions, and all of the variables that were present at that time, we can understand the importance (weighted scale) of certain variables, and their impact towards the outcome. This takes a lot of data, and a lot of time....the end result? A technology solution that doesn't 'guess' outcomes, in fact, what you are left with, is a technology solution that remains completely impartial to any one data point; that demands multiple data points be present and viable, before arriving at a conclusion.</p>
+          <p><strong>'Prove Me Wrong'</strong> - One of the single, most powerful, components to the technology, is the constant seeking to prove itself wrong. How does it do that? It is constantly looking back to previous conclusions it has made, and looks for 'real life' updates to that property/home owner. For instance, if the system predicts the likelihood of a property changing possession as very low, but then sees that property involved in a transaction 30 days later, it will 'learn' from this inaccurate prediction, and most importantly, carry those new findings to all future conclusions....In essence, it is always learning, always improving, and always seeking to 'prove itself wrong'.</p>
+        </div>
+        <button class="expand-btn" onclick="toggleDetail('pm-detail', this)">+</button>
+      </div>
+    </div>
+
+    <!-- Lead Generation -->
+    <div class="tech-card">
+      <div class="tech-image">
+        <img src="https://lirp.cdn-website.com/2cbae5bf/dms3rep/multi/opt/lead-generation-480w.png" alt="Lead Generation">
+      </div>
+      <div class="tech-content">
+        <h3>Lead Generation</h3>
+        <p class="tech-summary">"That's cool, but what does it do?"</p>
+        <div class="tech-detail" id="lg-detail">
+          <p>.....Advanced targeting methods to generate the perfect 'motivated home seller' lead.</p>
+        </div>
+        <button class="expand-btn" onclick="toggleDetail('lg-detail', this)">+</button>
+      </div>
+    </div>
+
+  </div>
+
+  <hr class="divider">
+
+  <footer class="footer">
+    <div>
+      GVG Capital, LLC<br>
+      4305 Windsor Centre Trail<br>
+      #300<br>
+      Flower Mound, TX 75028
+    </div>
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/company/gvg-capital" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      <a href="mailto:info@gvgcapital.org" aria-label="Email"><i class="fas fa-envelope"></i></a>
+    </div>
+    <div style="margin-top: 15px; font-size: 12px; color: #999;">
+      <a href="privacy.html" style="color: #999; text-decoration: underline;">Privacy Policy</a>
+    </div>
+  </footer>
+
+  <script>
+    function toggleDetail(id, btn) {
+      const el = document.getElementById(id);
+      el.classList.toggle('open');
+      btn.textContent = el.classList.contains('open') ? 'â' : '+';
+    }
+  </script>
+
+</body>
+</html>
